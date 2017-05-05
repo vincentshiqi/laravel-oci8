@@ -102,10 +102,10 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/yajra/laravel-oci8.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/yajra/laravel-oci8.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/yajra/laravel-oci8
-[link-travis]: https://travis-ci.org/yajra/laravel-oci8
-[link-scrutinizer]: https://scrutinizer-ci.com/g/yajra/laravel-oci8/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/yajra/laravel-oci8
-[link-downloads]: https://packagist.org/packages/yajra/laravel-oci8
-[link-author]: https://github.com/yajra
+[link-packagist]: https://packagist.org/packages/vincentshiqi/laravel-oci8
+[link-travis]: https://travis-ci.org/vincentshiqi/laravel-oci8
+[link-scrutinizer]: https://scrutinizer-ci.com/g/vincentshiqi/laravel-oci8/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/vincentshiqi/laravel-oci8
+[link-downloads]: https://packagist.org/packages/vincentshiqi/laravel-oci8
+[link-author]: https://github.com/vincentshiqi
 [link-contributors]: ../../contributors
