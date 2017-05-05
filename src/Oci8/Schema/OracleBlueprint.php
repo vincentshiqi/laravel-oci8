@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Schema;
+namespace Vincent\Oci8\Schema;
 
 use Illuminate\Database\Schema\Blueprint;
 

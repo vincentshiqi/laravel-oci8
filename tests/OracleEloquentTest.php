@@ -10,9 +10,9 @@ use Illuminate\Database\Query\Processors\PostgresProcessor;
 use Illuminate\Database\Query\Processors\SQLiteProcessor;
 use Illuminate\Database\Query\Processors\SqlServerProcessor;
 use Illuminate\Database\Query\Grammars\SqlServerGrammar;
-use Yajra\Oci8\Query\Grammars\OracleGrammar;
-use Yajra\Oci8\Query\OracleBuilder;
-use Yajra\Oci8\Query\Processors\OracleProcessor;
+use Vincent\Oci8\Query\Grammars\OracleGrammar;
+use Vincent\Oci8\Query\OracleBuilder;
+use Vincent\Oci8\Query\Processors\OracleProcessor;
 
 
 /**
@@ -159,6 +159,6 @@ class OracleEloquentTest extends PHPUnit_Framework_TestCase
     }
 }
 
-class OracleEloquentStub extends \Yajra\Oci8\Eloquent\OracleEloquent
+class OracleEloquentStub extends \Vincent\Oci8\Eloquent\OracleEloquent
 {
 }

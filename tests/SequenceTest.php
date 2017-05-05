@@ -1,7 +1,7 @@
 <?php
 
 use Mockery as m;
-use Yajra\Oci8\Schema\Sequence;
+use Vincent\Oci8\Schema\Sequence;
 
 class SequenceTest extends PHPUnit_Framework_TestCase
 {

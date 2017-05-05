@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Query\Processors;
+namespace Vincent\Oci8\Query\Processors;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder;
@@ -36,11 +36,11 @@ class OracleProcessor extends Processor
      *
      * @param Builder $query
      * @param string $sql
-     * @return \PDOStatement|\Yajra\Pdo\Oci8
+     * @return \PDOStatement|\Vincent\Pdo\Oci8
      */
     private function prepareStatement(Builder $query, $sql)
     {
-        /** @var \Yajra\Oci8\Oci8Connection $connection */
+        /** @var \Vincent\Oci8\Oci8Connection $connection */
         $connection = $query->getConnection();
         $pdo        = $connection->getPdo();
 

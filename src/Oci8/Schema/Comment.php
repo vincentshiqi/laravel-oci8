@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\Oci8\Schema;
+namespace Vincent\Oci8\Schema;
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Grammars\Grammar;
-use Yajra\Oci8\OracleReservedWords;
+use Vincent\Oci8\OracleReservedWords;
 
 class Comment extends Grammar
 {
@@ -26,7 +26,7 @@ class Comment extends Grammar
     /**
      * Set table and column comments.
      *
-     * @param  \Yajra\Oci8\Schema\OracleBlueprint $blueprint
+     * @param  \Vincent\Oci8\Schema\OracleBlueprint $blueprint
      */
     public function setComments(OracleBlueprint $blueprint)
     {
@@ -41,7 +41,7 @@ class Comment extends Grammar
      * Run the comment on table statement.
      * Comment set by $table->comment = 'comment';
      *
-     * @param \Yajra\Oci8\Schema\OracleBlueprint $blueprint
+     * @param \Vincent\Oci8\Schema\OracleBlueprint $blueprint
      */
     private function commentTable(OracleBlueprint $blueprint)
     {
@@ -67,7 +67,7 @@ class Comment extends Grammar
      * Add comments set via fluent setter.
      * Comments set by $table->string('column')->comment('comment');
      *
-     * @param \Yajra\Oci8\Schema\OracleBlueprint $blueprint
+     * @param \Vincent\Oci8\Schema\OracleBlueprint $blueprint
      */
     private function fluentComments(OracleBlueprint $blueprint)
     {
@@ -98,7 +98,7 @@ class Comment extends Grammar
      * Add comments on columns.
      * Comments set by $table->commentColumns = ['column' => 'comment'];
      *
-     * @param \Yajra\Oci8\Schema\OracleBlueprint $blueprint
+     * @param \Vincent\Oci8\Schema\OracleBlueprint $blueprint
      */
     private function commentColumns(OracleBlueprint $blueprint)
     {

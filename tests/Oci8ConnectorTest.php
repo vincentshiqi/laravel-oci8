@@ -24,7 +24,7 @@ class DatabaseConnectorTest extends PHPUnit_Framework_TestCase
             'options'  => [],
         ];
         $oci8      = $connector->createConnection($tns, $config, []);
-        $this->assertInstanceOf(Yajra\Pdo\Oci8::class, $oci8);
+        $this->assertInstanceOf(Vincent\Pdo\Oci8::class, $oci8);
     }
 
     public function testOptionResolution()
@@ -42,7 +42,7 @@ class DatabaseConnectorTest extends PHPUnit_Framework_TestCase
      */
     public function testOracleConnectCallsCreateConnectionWithProperArguments($dsn, $config)
     {
-        $connector = $this->getMockBuilder(Yajra\Oci8\Connectors\OracleConnector::class)->setMethods(['createConnection', 'getOptions'])->getMock();
+        $connector = $this->getMockBuilder(Vincent\Oci8\Connectors\OracleConnector::class)->setMethods(['createConnection', 'getOptions'])->getMock();
         $connection = m::mock('PDO');
         $connector->expects($this->once())
                   ->method('getOptions')
@@ -179,7 +179,7 @@ class DatabaseConnectorTest extends PHPUnit_Framework_TestCase
     }
 }
 
-class OracleConnectorStub extends \Yajra\Oci8\Connectors\OracleConnector
+class OracleConnectorStub extends \Vincent\Oci8\Connectors\OracleConnector
 {
     public function createConnection($tns, array $config, array $options)
     {
@@ -187,7 +187,7 @@ class OracleConnectorStub extends \Yajra\Oci8\Connectors\OracleConnector
     }
 }
 
-class Oci8Stub extends \Yajra\Pdo\Oci8
+class Oci8Stub extends \Vincent\Pdo\Oci8
 {
     public function __construct($dsn, $username, $password, array $options = [])
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8;
+namespace Vincent\Oci8;
 
 use Illuminate\Support\Str;
 

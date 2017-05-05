@@ -1,11 +1,11 @@
 <?php
 
-namespace Yajra\Oci8\Connectors;
+namespace Vincent\Oci8\Connectors;
 
 use Illuminate\Database\Connectors\Connector;
 use Illuminate\Database\Connectors\ConnectorInterface;
 use PDO;
-use Yajra\Pdo\Oci8;
+use Vincent\Pdo\Oci8;
 
 class OracleConnector extends Connector implements ConnectorInterface
 {

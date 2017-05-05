@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\Oci8;
+namespace Vincent\Oci8;
 
 use Illuminate\Support\ServiceProvider;
-use Yajra\Oci8\Auth\OracleUserProvider;
-use Yajra\Oci8\Connectors\OracleConnector as Connector;
+use Vincent\Oci8\Auth\OracleUserProvider;
+use Vincent\Oci8\Connectors\OracleConnector as Connector;
 use Illuminate\Support\Facades\Auth;
 
 class Oci8ServiceProvider extends ServiceProvider
@@ -65,7 +65,7 @@ class Oci8ServiceProvider extends ServiceProvider
             if (isset($config['schema'])) {
                 $sessionVars['CURRENT_SCHEMA'] = $config['schema'];
             }
-            
+
             if (isset($config['session'])) {
                 $sessionVars = array_merge($sessionVars, $config['session']);
             }

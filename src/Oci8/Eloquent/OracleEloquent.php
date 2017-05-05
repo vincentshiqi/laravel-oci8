@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\Oci8\Eloquent;
+namespace Vincent\Oci8\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as IlluminateQueryBuilder;
-use Yajra\Oci8\Oci8Connection;
-use Yajra\Oci8\Query\Grammars\OracleGrammar;
-use Yajra\Oci8\Query\OracleBuilder as QueryBuilder;
+use Vincent\Oci8\Oci8Connection;
+use Vincent\Oci8\Query\Grammars\OracleGrammar;
+use Vincent\Oci8\Query\OracleBuilder as QueryBuilder;
 
 class OracleEloquent extends Model
 {
@@ -144,7 +144,7 @@ class OracleEloquent extends Model
     /**
      * Get a new query builder instance for the connection.
      *
-     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     * @return \Illuminate\Database\Query\Builder|\Vincent\Oci8\Query\OracleBuilder
      */
     protected function newBaseQueryBuilder()
     {

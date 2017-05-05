@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\Oci8\Schema;
+namespace Vincent\Oci8\Schema;
 
 use Illuminate\Database\Connection;
 
 class Sequence
 {
     /**
-     * @var \Illuminate\Database\Connection|\Yajra\Oci8\Oci8Connection
+     * @var \Illuminate\Database\Connection|\Vincent\Oci8\Oci8Connection
      */
     protected $connection;
 

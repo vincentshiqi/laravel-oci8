@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Query;
+namespace Vincent\Oci8\Query;
 
 use Illuminate\Database\Query\Builder;
 
@@ -16,14 +16,14 @@ class OracleBuilder extends Builder
      */
     public function insertLob(array $values, array $binaries, $sequence = 'id')
     {
-        /** @var \Yajra\Oci8\Query\Grammars\OracleGrammar $grammar */
+        /** @var \Vincent\Oci8\Query\Grammars\OracleGrammar $grammar */
         $grammar = $this->grammar;
         $sql     = $grammar->compileInsertLob($this, $values, $binaries, $sequence);
 
         $values   = $this->cleanBindings($values);
         $binaries = $this->cleanBindings($binaries);
 
-        /** @var \Yajra\Oci8\Query\Processors\OracleProcessor $processor */
+        /** @var \Vincent\Oci8\Query\Processors\OracleProcessor $processor */
         $processor = $this->processor;
 
         return $processor->saveLob($this, $sql, $values, $binaries);
@@ -41,14 +41,14 @@ class OracleBuilder extends Builder
     {
         $bindings = array_values(array_merge($values, $this->getBindings()));
 
-        /** @var \Yajra\Oci8\Query\Grammars\OracleGrammar $grammar */
+        /** @var \Vincent\Oci8\Query\Grammars\OracleGrammar $grammar */
         $grammar = $this->grammar;
         $sql     = $grammar->compileUpdateLob($this, $values, $binaries, $sequence);
 
         $values   = $this->cleanBindings($bindings);
         $binaries = $this->cleanBindings($binaries);
 
-        /** @var \Yajra\Oci8\Query\Processors\OracleProcessor $processor */
+        /** @var \Vincent\Oci8\Query\Processors\OracleProcessor $processor */
         $processor = $this->processor;
 
         return $processor->saveLob($this, $sql, $values, $binaries);
@@ -63,7 +63,7 @@ class OracleBuilder extends Builder
      * @param  mixed $values
      * @param  string $boolean
      * @param  bool $not
-     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     * @return \Illuminate\Database\Query\Builder|\Vincent\Oci8\Query\OracleBuilder
      */
     public function whereIn($column, $values, $boolean = 'and', $not = false)
     {

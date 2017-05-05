@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Auth;
+namespace Vincent\Oci8\Auth;
 
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Support\Str;

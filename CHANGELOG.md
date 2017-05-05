@@ -185,7 +185,7 @@
 - Fix PDO Type detection when binding values. Fix #122
 
 #v4.0.0
-- Change vendor namespace from yajra to Yajra.
+- Change vendor namespace from vincent to Vincent.
 - Remove own pluck implementation. Frameworks implementation works out of the box.
 - Publishing of config file is now optional.
 - Improve query when expecting first row as result.
@@ -233,7 +233,7 @@
 
 #v2.3.0
 - added support for Oracle Cursor to be returned via Query Builder
-- requires `yajra/laravel-pdo-via-oci8:~0.12`
+- requires `vincent/laravel-pdo-via-oci8:~0.12`
 
 #v2.2.0
 - added support for Laravel Lumen

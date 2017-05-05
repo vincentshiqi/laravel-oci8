@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Query\Expression as Raw;
 use Mockery as m;
-use Yajra\Oci8\Query\OracleBuilder as Builder;
-use Yajra\Pdo\Oci8\Exceptions\Oci8Exception;
+use Vincent\Oci8\Query\OracleBuilder as Builder;
+use Vincent\Pdo\Oci8\Exceptions\Oci8Exception;
 
 class Oci8QueryBuilderTest extends PHPUnit_Framework_TestCase
 {
@@ -21,8 +21,8 @@ class Oci8QueryBuilderTest extends PHPUnit_Framework_TestCase
 
     protected function getBuilder()
     {
-        $grammar   = new Yajra\Oci8\Query\Grammars\OracleGrammar;
-        $processor = m::mock(Yajra\Oci8\Query\Processors\OracleProcessor::class);
+        $grammar   = new Vincent\Oci8\Query\Grammars\OracleGrammar;
+        $processor = m::mock(Vincent\Oci8\Query\Processors\OracleProcessor::class);
 
         return new Builder(m::mock(Illuminate\Database\ConnectionInterface::class), $grammar, $processor);
     }
@@ -803,8 +803,8 @@ class Oci8QueryBuilderTest extends PHPUnit_Framework_TestCase
     {
         $method     = 'whereFooBarAndBazOrQux';
         $parameters = ['corge', 'waldo', 'fred'];
-        $grammar    = new Yajra\Oci8\Query\Grammars\OracleGrammar;
-        $processor  = m::mock('Yajra\Oci8\Query\Processors\OracleProcessor');
+        $grammar    = new Vincent\Oci8\Query\Grammars\OracleGrammar;
+        $processor  = m::mock('Vincent\Oci8\Query\Processors\OracleProcessor');
         $builder    = m::mock('Illuminate\Database\Query\Builder[where]',
             [m::mock('Illuminate\Database\ConnectionInterface'), $grammar, $processor]);
 
@@ -819,8 +819,8 @@ class Oci8QueryBuilderTest extends PHPUnit_Framework_TestCase
     {
         $method     = 'whereIosVersionAndAndroidVersionOrOrientation';
         $parameters = ['6.1', '4.2', 'Vertical'];
-        $grammar    = new Yajra\Oci8\Query\Grammars\OracleGrammar;
-        $processor  = m::mock('Yajra\Oci8\Query\Processors\OracleProcessor');
+        $grammar    = new Vincent\Oci8\Query\Grammars\OracleGrammar;
+        $processor  = m::mock('Vincent\Oci8\Query\Processors\OracleProcessor');
         $builder    = m::mock('Illuminate\Database\Query\Builder[where]',
             [m::mock('Illuminate\Database\ConnectionInterface'), $grammar, $processor]);
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace Yajra\Oci8\Schema;
+namespace Vincent\Oci8\Schema;
 
 use Illuminate\Database\Connection;
-use Yajra\Oci8\OracleReservedWords;
+use Vincent\Oci8\OracleReservedWords;
 
 class Trigger
 {
     use OracleReservedWords;
 
     /**
-     * @var \Illuminate\Database\Connection|\Yajra\Oci8\Oci8Connection
+     * @var \Illuminate\Database\Connection|\Vincent\Oci8\Oci8Connection
      */
     protected $connection;
 

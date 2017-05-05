@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Schema;
+namespace Vincent\Oci8\Schema;
 
 use Closure;
 use Illuminate\Database\Connection;
@@ -9,12 +9,12 @@ use Illuminate\Database\Schema\Builder;
 class OracleBuilder extends Builder
 {
     /**
-     * @var \Yajra\Oci8\Schema\OracleAutoIncrementHelper
+     * @var \Vincent\Oci8\Schema\OracleAutoIncrementHelper
      */
     public $helper;
 
     /**
-     * @var \Yajra\Oci8\Schema\Comment
+     * @var \Vincent\Oci8\Schema\Comment
      */
     public $comment;
 
@@ -121,7 +121,7 @@ class OracleBuilder extends Builder
      */
     public function hasTable($table)
     {
-        /** @var \Yajra\Oci8\Schema\Grammars\OracleGrammar $grammar */
+        /** @var \Vincent\Oci8\Schema\Grammars\OracleGrammar $grammar */
         $grammar = $this->grammar;
         $sql     = $grammar->compileTableExists();
 
@@ -141,7 +141,7 @@ class OracleBuilder extends Builder
     {
         $database = $this->connection->getConfig('username');
         $table    = $this->connection->getTablePrefix() . $table;
-        /** @var \Yajra\Oci8\Schema\Grammars\OracleGrammar $grammar */
+        /** @var \Vincent\Oci8\Schema\Grammars\OracleGrammar $grammar */
         $grammar = $this->grammar;
         $results = $this->connection->select($grammar->compileColumnExists($database, $table));
 
