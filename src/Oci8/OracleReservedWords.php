@@ -441,7 +441,7 @@ trait OracleReservedWords
         'THEN',
         'THREAD',
         'TIMESTAMP',
-        'TIME',
+        //'TIME',
         'TO',
         'TOPLEVEL',
         'TRACE',
