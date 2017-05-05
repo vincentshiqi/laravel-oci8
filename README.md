@@ -37,7 +37,7 @@ Once Composer has installed or updated your packages you need to register Larave
 ```php
 Vincent\Oci8\Oci8ServiceProvider::class,
 ```
-> Important: Since v4.0, the package will now use `Vincent\Oci8` (capital Y) namespace from `yajra\Oci8` to follow the name standard for vendor name.
+> Important: Since v4.0, the package will now use `Vincent\Oci8` (capital Y) namespace from `Vincent\Oci8` to follow the name standard for vendor name.
 
 ## Configuration (OPTIONAL)
 Finally you can optionally publish a configuration file by running the following Artisan command.
@@ -95,12 +95,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 ## Buy me a beer
 <a href='https://pledgie.com/campaigns/29516'><img alt='Click here to lend your support to: Laravel-OCI8 and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/29516.png?skin_name=chrome' border='0' ></a>
 
-[ico-version]: https://img.shields.io/packagist/v/yajra/laravel-oci8.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/vincentshiqi/laravel-oci8.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/yajra/laravel-oci8/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/yajra/laravel-oci8.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/yajra/laravel-oci8.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/yajra/laravel-oci8.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/vincentshiqi/laravel-oci8/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/vincentshiqi/laravel-oci8.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/vincentshiqi/laravel-oci8.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/vincentshiqi/laravel-oci8.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/vincentshiqi/laravel-oci8
 [link-travis]: https://travis-ci.org/vincentshiqi/laravel-oci8
