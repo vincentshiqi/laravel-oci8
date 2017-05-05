@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/yajra/laravel-oci8).
+We accept contributions via Pull Requests on [Github](https://github.com/vincentshiqi/laravel-oci8).
 
 
 ## Pull Requests
